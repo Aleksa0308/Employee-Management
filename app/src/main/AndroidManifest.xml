@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rs.raf.avg.aleksa_stojanovic_rn5619.usermanagment">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".application.UserManagmentApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UserManagment">
+        <activity
+            android:name=".presentation.view.activities.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.view.activities.EmployeeDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.view.activities.DrawerNavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_drawer_navigation"
+            android:theme="@style/Theme.UserManagment.NoActionBar" />
+        <activity
+            android:name=".presentation.view.activities.MainActivity"
+            android:exported="true"
+       android:theme="@style/Theme.App.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
